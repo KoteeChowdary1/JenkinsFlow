@@ -21,7 +21,7 @@ pipeline {
 
 // steps
 def buildApp() {
-	dir ('section_4/code/cd_pipeline' ) {
+	dir ('JenkinsFlow' ) {
 		def appImage = docker.build("hands-on-jenkins/myapp:${BUILD_NUMBER}")
 	}
 }
