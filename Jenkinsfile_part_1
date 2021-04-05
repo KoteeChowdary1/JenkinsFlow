@@ -21,8 +21,8 @@ pipeline {
 
 // steps
 def buildApp() {
-	dir ('JenkinsFlow/' ) {
-		def appImage = docker.build("JenkinsFlow/myapp:${BUILD_NUMBER}")
+	dir ('jenkinsflow/' ) {
+		def appImage = docker.build("jenkinsflow/myapp:${BUILD_NUMBER}")
 	}
 }
 
